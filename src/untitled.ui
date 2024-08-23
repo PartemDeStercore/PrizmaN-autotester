@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>847</width>
-    <height>707</height>
+    <height>693</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -401,12 +401,18 @@ p, li { white-space: pre-wrap; }
       <x>340</x>
       <y>60</y>
       <width>231</width>
-      <height>101</height>
+      <height>134</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_6">
      <item>
       <widget class="QTextBrowser" name="textBrowser_14">
+       <property name="minimumSize">
+        <size>
+         <width>229</width>
+         <height>33</height>
+        </size>
+       </property>
        <property name="maximumSize">
         <size>
          <width>229</width>
@@ -446,6 +452,18 @@ p, li { white-space: pre-wrap; }
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_11">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Фокус</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="verticalLayoutWidget_6">
@@ -454,7 +472,7 @@ p, li { white-space: pre-wrap; }
       <x>610</x>
       <y>60</y>
       <width>201</width>
-      <height>241</height>
+      <height>208</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -519,19 +537,7 @@ p, li { white-space: pre-wrap; }
         </font>
        </property>
        <property name="text">
-        <string>GPS1</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_11">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>GPS2</string>
+        <string>GPS</string>
        </property>
       </widget>
      </item>
@@ -555,8 +561,11 @@ p, li { white-space: pre-wrap; }
       <x>340</x>
       <y>360</y>
       <width>471</width>
-      <height>281</height>
+      <height>251</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(0, 0, 0);</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -579,7 +588,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>780</x>
-      <y>0</y>
+      <y>10</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -589,7 +598,7 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="icon">
      <iconset>
-      <normalon>../Downloads/images (1).png</normalon>
+      <normalon>../../../Downloads/images (1).png</normalon>
      </iconset>
     </property>
     <property name="iconSize">
@@ -599,7 +608,26 @@ p, li { white-space: pre-wrap; }
      </size>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox">
+   <widget class="QTextEdit" name="textEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>610</y>
+      <width>471</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>471</width>
+      <height>31</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(0, 0, 0);</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_4">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -608,26 +636,36 @@ p, li { white-space: pre-wrap; }
       <height>41</height>
      </rect>
     </property>
-    <property name="maximumSize">
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;COM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_14">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>240</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/png-clipart-computer-icons-android-camera-icon-camera-icon-logo (1).png</normaloff>../../../Downloads/png-clipart-computer-icons-android-camera-icon-camera-icon-logo (1).png</iconset>
+    </property>
+    <property name="iconSize">
      <size>
-      <width>261</width>
-      <height>41</height>
+      <width>64</width>
+      <height>64</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-selection-color: rgb(0, 0, 0);</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>COM8</string>
-     </property>
-    </item>
    </widget>
    <zorder>label</zorder>
    <zorder>verticalLayoutWidget</zorder>
@@ -640,7 +678,9 @@ selection-color: rgb(0, 0, 0);</string>
    <zorder>verticalLayoutWidget_6</zorder>
    <zorder>textBrowser_16</zorder>
    <zorder>pushButton_13</zorder>
-   <zorder>comboBox</zorder>
+   <zorder>textEdit_4</zorder>
+   <zorder>textBrowser_4</zorder>
+   <zorder>pushButton_14</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
