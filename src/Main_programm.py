@@ -3,11 +3,13 @@ import serial
 import serial.tools.list_ports
 from PyQt5.QtWidgets import QMainWindow, QApplication, QButtonGroup
 from Main_window_design import Ui_MainWindow
+from Settings_design import Ui_MainWindow_Settings
 
 
 class WorkClass(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super(WorkClass, self).__init__()
+        self.st = Settings()
         self.setupUi(self)
         self.port = []
         self.ports = []
@@ -81,7 +83,7 @@ class WorkClass(QMainWindow, Ui_MainWindow):
         self.pushButton_8.clicked.connect(self.any_func)  # GPS
         self.pushButton_9.clicked.connect(self.any_func)  # ВСЕ ПАРАМЕТРЫ
         self.pushButton_14.clicked.connect(self.any_func)  # OPENCV !!!
-        self.pushButton_13.clicked.connect(self.any_func)  # МЕНЮ НАСТРОЕК !!!
+        self.pushButton_13.clicked.connect(self.open_settings)
 
 
     def comport(self):
@@ -110,6 +112,15 @@ class WorkClass(QMainWindow, Ui_MainWindow):
         pass  # Жека, это функция по приколу, везде где комменты ее нужно поменять на рабочую, объявляешь в классе
         # как def func(self, args...)
         # OpenCV подумаем и меню настроек сделаем позже
+
+    def open_settings(self):
+        self.st.show()
+
+
+class Settings(QMainWindow, Ui_MainWindow_Settings):
+    def __init__(self):
+        super(Settings, self).__init__()
+        self.setupUi(self)
 
 
 if __name__ == '__main__':
